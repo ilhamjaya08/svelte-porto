@@ -6,6 +6,13 @@
 <svelte:head>
 	<title>ilhamjaya08 | Portfolio</title>
 	<meta name="description" content="Svelte Portfolio by ilhamjaya08" />
+	<meta name="title" content="ilhamjaya08 | Portfolio">
+    <meta name="keywords" content="portfolio, svelte, sveltekit, svelte-portfolio, ui, ux, ilhamjaya08">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="ilhamjaya08">
 </svelte:head>
 
 <section>
