@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/ilhamjaya08-light.svg';
+	import Icon from '@iconify/svelte';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="https://www.ilhamjaya08.me">
+			<img src={logo} alt="ilhamjaya08logo" />
 		</a>
 	</div>
 
@@ -32,8 +32,8 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
+		<a href="https://github.com/ilhamjaya08/svelte-porto">
+			<Icon icon="eos-icons:fork-outlined" />
 		</a>
 	</div>
 </header>
