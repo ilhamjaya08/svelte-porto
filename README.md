@@ -1,20 +1,14 @@
-# create-svelte
+<div align="center">
+# svelte-porto
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is my new portfolio project using SvelteKit as framework, the project begin as my learning-media to Svelte Framework. If you want to contribute to this project, please contact me at my Social Contact on my main GitHub profile
+</div>
 
-## Creating a project
+## Contributing
 
-If you're seeing this, you've probably already done this step. Congrats!
+According to my Statements on the top section of this Readme, please hub me first for ensure and coordinate in this project, open to anyone.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
+## Running Locally and Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
