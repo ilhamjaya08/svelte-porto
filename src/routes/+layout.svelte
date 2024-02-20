@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import background from '$lib/images/background.png';
 </script>
 
 <div class="app">
