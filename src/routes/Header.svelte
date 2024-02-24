@@ -2,6 +2,12 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/ilhamjaya08-light.svg';
 	import Icon from '@iconify/svelte';
+
+	let showMenu = false;
+
+    function toggleNavbar() {
+      showMenu = !showMenu;
+    }
 </script>
 
 <header>
@@ -11,25 +17,72 @@
 		</a>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/experience') ? 'page' : undefined}>
-				<a href="/experience">Experience</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+	<div>
+		<div>
+		  <nav
+			class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
+		  >
+			<div class="flex items-center justify-between">
+			  
+			  <!-- Mobile menu button -->
+			  <!-- svelte-ignore a11y-click-events-have-key-events -->
+			  <!-- svelte-ignore a11y-no-static-element-interactions -->
+			  <div on:click={toggleNavbar} class="flex md:hidden">
+				<button
+				  type="button"
+				  class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+				>
+				  <svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				  >
+					<path
+					  stroke-linecap="round"
+					  stroke-linejoin="round"
+					  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+					/>
+				  </svg>
+				</button>
+			  </div>
+			</div>
+	  
+			<!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+			<div
+			  class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
+				? 'flex'
+				: 'hidden'}"
+			>
+			  <a class="text-gray-800 hover:text-blue-400 font-serif font-bold font-navbar" href="/">
+				<Icon icon="uil:home" style="float: left; margin-right: 5px;" />
+				HOME
+			  </a>
+			  <a class="text-gray-800 hover:text-blue-400 font-serif font-bold font-navbar" href="/about">
+				<Icon icon="ic:outline-info" style="float: left; margin-right: 5px;"  />
+				ABOUT
+			  </a>
+			  <a class="text-gray-800 hover:text-blue-400 font-serif font-bold font-navbar" href="/experience">
+				<Icon icon="simple-icons:knowledgebase" style="float: left; margin-right: 5px;" />
+				EXPERIENCE
+			  </a>
+			  <a class="text-gray-800 hover:text-blue-400 font-serif font-bold font-navbar" href="/contact">
+				<Icon icon="grommet-icons:contact-info" style="float: left; margin-right: 5px;" />
+				CONTACT
+			  </a>
+			  
+			  <a class="text-gray-800 hover:text-blue-400 font-serif font-bold font-navbar" href="/resume">
+				<Icon icon="pepicons-pencil:cv" style="float: left; margin-right: 5px;" />
+				RESUME
+			  </a>
+			  
+			</div>
+		  </nav>
+		</div>
+	  </div>
+  
 
 	<div class="corner">
 		<a href="https://github.com/ilhamjaya08/svelte-porto">
@@ -63,7 +116,16 @@
 		object-fit: contain;
 	}
 
-	nav {
+	.font-navbar{
+		font-weight: 700;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+
+	/*nav {
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
@@ -125,5 +187,5 @@
 
 	a:hover {
 		color: var(--color-theme-1);
-	}
+	}*/
 </style>

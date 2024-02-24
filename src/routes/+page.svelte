@@ -1,6 +1,5 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import welcome from '$lib/images/ilhamjaya08-light.svg';
 </script>
 
 <svelte:head>
@@ -16,20 +15,12 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
 
-		to your new<br />SvelteKit app
-	</h1>
+    <span class="welcome">
+   	   <img src={welcome} alt="Welcome" />
+	</span>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	
 
 </section>
 
@@ -42,13 +33,11 @@
 		flex: 0.6;
 	}
 
-	h1 {
-		width: 100%;
-	}
 
 	.welcome {
 		display: block;
 		position: relative;
+		margin-top: -10%;
 		width: 100%;
 		height: 0;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
