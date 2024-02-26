@@ -14,13 +14,12 @@ In this project portfolio, I use several techstacks, namely:
 -Framework7 UI for Svelte 
 ```bash
 npm i framework7-svelte
-<br><br>
 ```
+<br><br>
 -Iconify for Icon Design
 ```bash
 npm i @iconify/svelte
 ```
-<br><br>
 etc.
 
 ## Contributing

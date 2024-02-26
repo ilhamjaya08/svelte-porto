@@ -70,7 +70,7 @@
 	}
 
 
-	.welcome {
+	/*.welcome {
 		display: block;
 		position: relative;
 		margin-top: -10%;
@@ -85,5 +85,5 @@
 		height: 100%;
 		top: 0;
 		display: block;
-	}
+	}*/
 </style>
