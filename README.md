@@ -6,16 +6,21 @@ This is my new portfolio project using SvelteKit as framework, the project begin
 
 ## TechStack Used
 In this project portfolio, I use several techstacks, namely:
+<br><br>
 -SvelteKit
+<br><br>
 -TailwindCSS
+<br><br>
 -Framework7 UI for Svelte 
 ```bash
 npm i framework7-svelte
+<br><br>
 ```
 -Iconify for Icon Design
 ```bash
 npm i @iconify/svelte
 ```
+<br><br>
 etc.
 
 ## Contributing
