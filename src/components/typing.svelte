@@ -5,6 +5,7 @@
 <style>
 .typewriter h1 {
   color: #fff;
+  font-size: larger;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */

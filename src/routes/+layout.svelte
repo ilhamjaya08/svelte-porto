@@ -1,19 +1,36 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import background from '$lib/images/background.png';
+	import Footer from './Footer.svelte';
+	
 </script>
+
+
 
 <div class="app">
 	<Header />
+
+	<script
+			src="https://cdn.jsdelivr.net/npm/mouseee@1.3.0/lib/index.js"
+            type="module">
+	</script>
+
+	<script>
+    const mouseeeConfig = {
+      color: "#fff", // cursor border color
+      size: 20, // cursor size
+      trailColor: "#fff", // trail color
+      trailTime: 300, // trail duration time
+      showTrail: true, // show trail
+      clickAnimation: true, // animation on click
+    };
+	</script>
 
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
@@ -34,21 +51,4 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
 </style>

@@ -1,6 +1,8 @@
 <script>
 	import welcome from '$lib/images/ilhamjaya08-light.svg';
 	import Typing from '../components/typing.svelte';
+	import Svelte from '$lib/images/Svelte.png';
+    import Formspree from '../components/Formspree.svelte';
 </script>
 
 <svelte:head>
@@ -20,10 +22,24 @@
     <span class="welcome">
    	   <img src={welcome} alt="Welcome" />
 	</span>
-	<Typing />
-	<div class="">
-		
+	<div class="title">
+		<p class="ilhamjaya08">ilhamjaya08 </p>
 	</div>
+	<Typing />
+	<div class="hi">
+		<h1>Hello (❁´◡`❁),<br>My name is Muhammad Ilham Jaya</h1>
+	</div>
+	<div class="introducing">
+		<p>
+			I'm a Junior Developer. I'm 16 y.o and now I am a student at SMK N 5 Surakarta
+			Aute eiusmod anim do nostrud voluptate culpa nulla id labore commodo. Elit deserunt sunt excepteur Lorem minim labore ullamco dolore ad. Deserunt aliqua laborum laboris aliqua irure consequat sint adipisicing irure. Sit eu voluptate ad ullamco minim.
+		</p>
+	</div>
+
+
+
+
+
 	<div class="fixed bottom-4 right-4 animate-bounce">
 		<button  class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg">
 		  <a href="/csoon" class="bot-text">
@@ -31,13 +47,19 @@
 		  Live Chat with Bot</a>
 		</button>
 	</div>
+	
+	<Formspree />
 </section>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+
 	.bot-icon {
 		display: block;
 		margin-left: 35%;
-		color: chartreuse;
+		color: chartreu
+		se;
 	}
 
 	.bot-text {
@@ -68,5 +90,31 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+
+	.title p {
+		display: inline;
+	}
+
+	.ilhamjaya08 {
+		font-family: "Caveat", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+		color: black;
+	}
+
+	.hi h1 {
+		margin: 50px 10px 0;
+		font-size: 36px;
+		color: white;
+		font-family: monospace;
+		font-size: large;
+	}
+
+	.introducing p {
+		font-family: "Fira Code", monospace;
+		font-size: 16px;
+		color: black;
+		margin-left: 10%;
 	}
 </style>
