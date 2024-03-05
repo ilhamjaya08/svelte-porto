@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.2.2",
 		"firebase": "^10.8.0",
 		"framework7": "^8.3.1",
 		"framework7-svelte": "^8.3.1",
