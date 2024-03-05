@@ -23,7 +23,7 @@
    	   <img src={welcome} alt="Welcome" />
 	</span>
 	<div class="title">
-		<p class="ilhamjaya08">ilhamjaya08 </p>
+		<p class="ilhamjaya08 text-1m font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-purple-700">ilhamjaya08 </p>
 	</div>
 	<Typing />
 	<div class="hi">
@@ -100,7 +100,6 @@
 		font-family: "Caveat", cursive;
         font-optical-sizing: auto;
         font-style: normal;
-		color: black;
 	}
 
 	.hi h1 {
