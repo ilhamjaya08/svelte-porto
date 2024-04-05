@@ -27,8 +27,8 @@
 	<div class="rounded-lg shadow-lg border-y-cyan-950 bg-white">
 	  <img src={edu.img} alt="" class="rounded-t-lg relative float-left">
 	  <div class="p-2">
-		<h6 class="text-grey-700 mb-2">{edu.name}</h6 >
-		
+		<h5 class="text-grey-700 mb-2">{edu.name}</h5 >
+		<p class="">{edu.type}</p>
 	  </div>
   
 	</div>
