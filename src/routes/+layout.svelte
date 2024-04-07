@@ -2,6 +2,7 @@
 	import Header from './Header.svelte';
 	import Navbar from "../components/Navbar.svelte"
 	import Sidebar from "../components/Sidebar.svelte"
+	import Social from "../components/Social.svelte"
 
 	import './styles.css';
 	import Footer from './Footer.svelte';
@@ -50,6 +51,7 @@
 		<slot />
 	</main>
 
+	<Social />
 	<Footer />
 </div>
 
