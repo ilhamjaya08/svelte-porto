@@ -1,6 +1,7 @@
 <script>
 	import ilhamjaya08 from '$lib/images/ilhamjaya08-light.svg';
 	import { Card, Button } from 'flowbite-svelte';
+	import Icon from '@iconify/svelte'
 	import education from '$lib/data/Education'
 	import address from '$lib/data/Address'
 </script>
@@ -22,11 +23,13 @@
 </div>
 
 
-<div class="grid">
+<div class="flex flex-wrap ">
+	<div class="w-full md:w-1/2 border-r border-colo"> 
+		<div class="md:pl-4 md:pr-2 pb-4 md:pb-0">
 <h1 class="text-black font-mono text-left mt-5">Educational Background</h1>
 
 {#each education as edu}
-<div class="p-1 w-full md:w-1/2 mt-[10px] ">
+<div class="p-1  mt-[10px] ">
 	<div class="rounded-lg shadow-lg card">
 	  <img src={edu.img} alt="" class="rounded-t-lg relative float-left">
 	  <div class="p-2">
@@ -37,24 +40,29 @@
 	</div>
   </div>
 {/each}
+</div>
+</div>
 
+<div class="w-full md:w-1/2">
+	<div class="md:pl-2 md:pr-4 "></div>
 <h1 class="text-black font-mono text-left mt-5">Where do I live?</h1>
 {#each address as adr}
-<div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 float-left">
+<div class="max-w-sm rounded overflow-hidden shadow-lg my-8 float-left  bg-white">
 	<img class="w-full" src={adr.img} alt="Karanganyar">
 	<div class="px-6 py-4">
-	  <div class="font-bold text-xl mb-2">{adr.city}, {adr.province}</div>
+	  <div class="font-bold text-xl mb-2">{adr.city}, {adr.province}, {adr.postal}</div>
+	  <p class="text-black text-sm flex">
+		<Icon class="mt-1 mr-1" icon="openmoji:flag-indonesia" />
+		{adr.country}</p>
 	  <p class="text-gray-600 text-base">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+		{adr.text}
 	  </p>
-	</div>
-	<div class="px-6 py-4">
-	  <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#photography</span>
-	  <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#travel</span>
-	  <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#winter</span>
 	</div>
   </div>
 {/each}
+</div>
+
+
 </div>
 
 <style>
