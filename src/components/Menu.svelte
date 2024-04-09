@@ -8,12 +8,6 @@
     &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
         Experience</a>
     &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
-        SkillSet</a>
-    &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
-        Roadmap</a>
-    &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
-        Certificate</a>
-    &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
         Projects</a>
     &#9899;<a href="/experience" class=" hover:text-purple-400 hover:no-underline">
         Career</a>

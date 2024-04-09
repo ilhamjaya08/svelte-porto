@@ -24,46 +24,45 @@
 
 
 <div class="flex flex-wrap ">
-	<div class="w-full md:w-1/2 border-r border-colo"> 
+	<div class="w-full border-r border-black md:w-1/2"> 
 		<div class="md:pl-4 md:pr-2 pb-4 md:pb-0">
-<h1 class="text-black font-mono text-left mt-5">Educational Background</h1>
-
-{#each education as edu}
-<div class="p-1  mt-[10px] ">
-	<div class="rounded-lg shadow-lg card">
-	  <img src={edu.img} alt="" class="rounded-t-lg relative float-left">
-	  <div class="p-2">
-		<h5 class="text-grey-700 mb-2">{edu.name} ({edu.year})</h5 >
-		<p class="font-serif text-xs ml-[37px]">{edu.type}</p>
-	  </div>
-  
-	</div>
-  </div>
-{/each}
+        <h1 class="text-black font-mono text-left mt-5">Educational Background</h1>
+          {#each education as edu}
+           <div class="p-1  mt-[10px] ">
+        	<div class="rounded-lg shadow-lg card">
+	         <img src={edu.img} alt="" class="rounded-t-lg relative float-left">
+	         <div class="p-2">
+		      <h5 class="text-grey-700 mb-2">{edu.name} ({edu.year})</h5 >
+	      	  <p class="font-serif text-xs ml-[37px]">{edu.type}</p>
+	         </div>
+        	</div>
+           </div>
+          {/each}
+        </div>
+    </div>
+    <div class="w-full pl-5 md:w-1/2">
+	  <div class="md:pl-2 md:pr-4">
+        <h1 class="text-black font-mono text-left mt-5">Where do I live?</h1>
+        {#each address as adr}
+        <div class="max-w-sm rounded overflow-hidden shadow-lg my-8 float-left  bg-white">
+     	  <img class="w-full" src={adr.img} alt="Karanganyar">
+	      <div class="px-6 py-4">
+	      <div class="font-bold text-xl mb-2">{adr.city}, {adr.province}, {adr.postal}</div>
+	       <p class="text-black text-sm flex">
+		    <Icon class="mt-1 mr-1" icon="openmoji:flag-indonesia" />
+	      	{adr.country}
+		   </p>
+	       <p class="text-gray-600 text-base">
+		    {adr.text}
+	       </p>
+	      </div>
+        </div>
+        {/each}
+      </div>
+    </div>
 </div>
-</div>
-
-<div class="w-full md:w-1/2">
-	<div class="md:pl-2 md:pr-4 "></div>
-<h1 class="text-black font-mono text-left mt-5">Where do I live?</h1>
-{#each address as adr}
-<div class="max-w-sm rounded overflow-hidden shadow-lg my-8 float-left  bg-white">
-	<img class="w-full" src={adr.img} alt="Karanganyar">
-	<div class="px-6 py-4">
-	  <div class="font-bold text-xl mb-2">{adr.city}, {adr.province}, {adr.postal}</div>
-	  <p class="text-black text-sm flex">
-		<Icon class="mt-1 mr-1" icon="openmoji:flag-indonesia" />
-		{adr.country}</p>
-	  <p class="text-gray-600 text-base">
-		{adr.text}
-	  </p>
-	</div>
-  </div>
-{/each}
-</div>
 
 
-</div>
 
 <style>
 	.about p {
