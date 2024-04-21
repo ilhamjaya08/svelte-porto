@@ -65,6 +65,11 @@ const techstack = [
                 icon: "devicon:nextjs"
             },
             {
+                name: "NestJS",
+                desc: "Another Backend Framework",
+                icon: "vscode-icons:file-type-nestjs"
+            },
+            {
                 name: "Astro",
                 desc: "Not too different from NextJS, but no less good either",
                 icon: "devicon:astro"
@@ -120,6 +125,22 @@ const techstack = [
                 name: "Canva",
                 desc: "",
                 icon: "devicon:canva"
+            }
+        ]
+    },
+    {
+        typestack: "Platform",
+        desc: "",
+        array: [
+            {
+                name: "Website Development",
+                desc: "",
+                icon: "mdi:web"
+            },
+            {
+                name: "Game Scripting",
+                desc: "",
+                icon: "codicon:game"
             }
         ]
     }

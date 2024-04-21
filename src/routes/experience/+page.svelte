@@ -27,7 +27,7 @@ import Icon from '@iconify/svelte'
         </h3>
         <p class="text-small font-mono text-gray-700 ">{stack.desc}</p>
     </div>
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-5 gap-4">
         {#each stack.array as child}
             <div class="bg-white rounded shadow border p-3">
                 <h5 class="text-large font-bold font-mono mb-4 mt-0">
