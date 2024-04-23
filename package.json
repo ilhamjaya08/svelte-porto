@@ -28,6 +28,7 @@
 		"@vercel/analytics": "^1.2.2",
 		"firebase": "^10.8.0",
 		"flowbite-svelte-icons": "^1.5.0",
+		"follower-count": "^0.5.0",
 		"framework7": "^8.3.1",
 		"framework7-svelte": "^8.3.1",
 		"rxfire": "^6.0.5",
